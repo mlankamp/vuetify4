@@ -1,7 +1,7 @@
 $body-font-family: 'Roboto', sans-serif;
 $heading-font-family: $body-font-family;
 
-$typography: 
+$typography: (
   (
     'h1': (
       'size': 6rem,
@@ -107,7 +107,9 @@ $typography:
       'font-family': $body-font-family,
       'text-transform': uppercase
     )
-  );
+  ),
+  $typography
+);
 
 $flat-typography: ();
 @each $type, $values in $typography {
